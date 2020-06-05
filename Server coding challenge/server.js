@@ -10,7 +10,7 @@ const app = express();
 
 /*Your code goes here*/
 
-app.patch('/api/add-movie-actor/:movie_ID', jsonParser, errorHandler, (req, res) => {
+app.patch('/api/remove-movie-actor/:movie_ID', jsonParser, errorHandler, (req, res) => {
     let movie_ID = req.params.movie_ID;
     let {firstName, lastName } = req.body;
 
