@@ -27,7 +27,7 @@ app.patch('/api/remove-movie-actor/:movie_ID', jsonParser, errorHandler, (req, r
             return res.status(201).json(removedActor)
         }
     })
-    .catch(err => {return res.status(201).json(removedActor)})
+    .catch(err => {return res.status(400).json(removedActor)})
 })
 
 app.listen( PORT, () => {
